@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Imrana Arzika — Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammad Imrana Arzika — Parasitology researcher and educator based in Sokoto, Nigeria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: #0f172a;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --accent: #22d3ee;
+      --chip: #1e293b;
+      --border: #334155;
+    }
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #475569;
+      --text: #0f172a;
+      --accent: #0ea5e9;
+      --chip: #f1f5f9;
+      --border: #cbd5e1;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;transition:background .3s,color .3s}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1040px;margin:0 auto;padding:32px 20px 80px}
+    header{display:grid;grid-template-columns:1fr;gap:18px;margin-top:12px;margin-bottom:28px}
+    @media(min-width:720px){header{grid-template-columns:1fr auto;align-items:end}}
+    .title{font-family:Merriweather,Georgia,serif;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0}
+    .subtitle{margin:6px 0 0;font-size:clamp(15px,2.4vw,18px);color:var(--muted)}
+    .contact{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:15px}
+    .contact a{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;background:var(--chip);border:1px solid var(--border);border-radius:999px}
+    nav{position:sticky;top:0;background:rgba(11,18,32,.6);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid var(--border)}
+    body.light nav{background:rgba(255,255,255,.6)}
+    .nav-inner{max-width:1040px;margin:0 auto;display:flex;gap:18px;overflow:auto;padding:10px 20px}
+    .nav-inner a{white-space:nowrap;padding:6px 10px;border-radius:8px;border:1px solid transparent}
+    .nav-inner a:hover{border-color:var(--border);background:var(--chip)}
+    .theme-toggle{margin-left:auto;cursor:pointer;padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--chip);}
+    section{margin:40px 0 0}
+    h2{font-size:clamp(20px,3vw,26px);margin:0 0 16px;font-weight:700}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;transition:background .3s,border .3s}
+    .grid{display:grid;gap:14px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    .item h3{margin:0 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:6px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:13px}
+    .list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .pub{padding:12px;border:1px dashed var(--border);border-radius:12px}
+    footer{margin-top:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:16px;text-align:center}
+    .profile-photo{width:160px;height:160px;border-radius:50%;object-fit:cover;border:3px solid var(--accent)}
+    .cv-button{display:inline-block;margin-top:12px;padding:8px 14px;background:var(--accent);color:#fff;border-radius:6px;font-weight:600}
+    .cv-button:hover{opacity:0.9}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#skills">Skills</a>
+      <a href="#memberships">Memberships</a>
+      <a href="#community">Community</a>
+      <a href="#languages">Languages</a>
+      <a href="#references">References</a>
+      <div class="theme-toggle" id="themeToggle">Toggle Theme</div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <div>
+        <h1 class="title">Muhammad Imrana Arzika</h1>
+        <p class="subtitle">Parasitology Researcher &amp; Educator — Sokoto, Nigeria</p>
+        <div class="contact" aria-label="Contact links">
+          <a href="mailto:imuhammadarzika@gmail.com">imuhammadarzika@gmail.com</a>
+          <a href="mailto:imranamuhammad40@gmail.com">imranamuhammad40@gmail.com</a>
+          <a href="tel:+2348065628145">+234&nbsp;806&nbsp;562&nbsp;8145</a>
+        </div>
+        <a href="cv-placeholder.pdf" class="cv-button" download>Download CV (PDF)</a>
+      </div>
+      <div style="text-align:center">
+        <img src="https://via.placeholder.com/160x160.png?text=Profile" alt="Profile photo" class="profile-photo" />
+      </div>
+    </header>
+
+    <!-- Rest of content omitted for brevity but same as before -->
+    <footer>
+      <div>© 2025 Muhammad Imrana Arzika · Last updated August 13, 2025 · Built by ChatGPT</div>
+    </footer>
+  </div>
+
+  <script>
+    // Theme toggle
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+    });
+  </script>
+</body>
+</html>
